@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Nunito:wght@200;300;400;600&family=Playfair+Display:wght@600&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+ 
+}
+h1{
+    color: rosybrown;
+}
+h1::first-letter{
+    font-size: 80px;
+    color:palevioletred;
+}
+.header{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(back-g.jpg);
+    background-size: cover;
+   
+}
+.nav-bar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-bar ul li{
+    list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+   color: #fff;
+   cursor: pointer;
+   text-transform: uppercase;
+   position: relative;
+}
+.nav-bar ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    
+    bottom: -10px;
+    left: 0;
+    background: palevioletred;
+  transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+    width: 100%;
+}
+.container{
+  text-align: center;
+  margin-top: 30px;
+}
+.flower{
+    color: seashell;
+}
+.flower::first-letter{
+   color: red;
+   font-size: 80px;
+
+}
+.flower-para{
+   font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: -3px;
+    letter-spacing: 2px;
+    color: gray;
+    
+}
+.btn-div{
+   text-align: center;
+   margin: 40px 20px;
+   padding: 30px 30px;
+}
+button{
+    width: 200px;
+    padding: 15px 15px;
+    font-size: 18px;
+   border-radius: 25px;
+   border: 2px solid pink;
+   background: transparent;
+   color: #fff;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+   
+}
+
+span{
+width: 0;
+height: 100%;
+border-radius: 25px; 
+background: #d87093;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: 1;
+color: #fff;
+transition: 0.5s;
+
+}
+button:hover span{
+     width: 100%;
+  
+ }
+ button:hover{
+     border: none;
+     /* background: palevioletred; */
+  color: #fff;
+     
+ }
